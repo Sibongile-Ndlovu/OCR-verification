@@ -1,0 +1,13 @@
+{
+    "appPageId": "4dfceb62-0999-fc47-26c4-dcc1244e12ce",
+    "appPageName": "admin",
+    "componentName": "adminComponent",
+    "selectorName": "bh-admin",
+    "htmlFileName": "admin.template.html",
+    "tsFileName": "admin.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

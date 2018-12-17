@@ -1,0 +1,11 @@
+{
+    "artId": "",
+    "appName": "ocr-validation",
+    "description": "Scan and view image text",
+    "lastModified": "2018-12-17T10:27:19.509Z",
+    "artURL": "http://localhost:3000/bhive-art/",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "dataSource": "neutrinos-delivery-rt",
+    "createDate": "2018-12-17T10:27:18.163Z"
+}
