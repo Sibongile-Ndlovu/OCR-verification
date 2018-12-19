@@ -23,5 +23,10 @@
         "appPageName": "admin",
         "componentName": "adminComponent",
         "isEntry": false
+    },
+    "f2c5023c-3351-94ee-f1fb-457ca5fcff8d": {
+        "appPageName": "scan",
+        "componentName": "scanComponent",
+        "isEntry": false
     }
 }

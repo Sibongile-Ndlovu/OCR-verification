@@ -4,7 +4,6 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-import { Router } from '@angular/router'; 
 
 /**
  * Service import Example :
@@ -12,24 +11,20 @@ import { Router } from '@angular/router';
  */
 
 @Component({
-    selector: 'bh-review',
-    templateUrl: './review.template.html'
+    selector: 'bh-scan',
+    templateUrl: './scan.template.html'
 })
 
-export class reviewComponent extends NBaseComponent implements OnInit {
+export class scanComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService, private router: Router) {
+    constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
 
-    }
-
-    next(){
-        this.router.navigate(['/home/admin']);
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

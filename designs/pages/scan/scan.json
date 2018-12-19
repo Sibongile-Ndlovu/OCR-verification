@@ -1,0 +1,13 @@
+{
+    "appPageId": "f2c5023c-3351-94ee-f1fb-457ca5fcff8d",
+    "appPageName": "scan",
+    "componentName": "scanComponent",
+    "selectorName": "bh-scan",
+    "htmlFileName": "scan.template.html",
+    "tsFileName": "scan.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

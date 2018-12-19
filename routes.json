@@ -7,7 +7,21 @@
             "redirectTo": "",
             "resolve": "",
             "data": "",
-            "canActivate": ""
+            "canActivate": "",
+            "children": [
+                {
+                    "component": "scanComponent",
+                    "path": "scan"
+                },
+                {
+                    "component": "reviewComponent",
+                    "path": "review"
+                },
+                {
+                    "component": "adminComponent",
+                    "path": "admin"
+                }
+            ]
         },
         {
             "path": "login",
@@ -16,7 +30,8 @@
             "redirectTo": "",
             "resolve": "",
             "data": "",
-            "canActivate": ""
+            "canActivate": "",
+            "children": []
         },
         {
             "path": "unauthorized",

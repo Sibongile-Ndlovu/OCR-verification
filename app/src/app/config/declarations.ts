@@ -12,6 +12,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-scanComponent
+import { scanComponent } from '../components/scanComponent/scan.component';
 //CORE_REFERENCE_IMPORT-adminComponent
 import { adminComponent } from '../components/adminComponent/admin.component';
 //CORE_REFERENCE_IMPORT-reviewComponent
@@ -58,6 +60,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-scanComponent
+scanComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-adminComponent
 adminComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-reviewComponent
@@ -93,5 +97,7 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full'},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'home', component: homeComponent,
+children: [{path: 'scan', component: scanComponent},{path: 'review', component: reviewComponent},{path: 'admin', component: adminComponent}]},{path: 'login', component: loginComponent,
+children: []},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full'},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

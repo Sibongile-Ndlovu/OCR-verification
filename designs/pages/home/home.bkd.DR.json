@@ -1,5 +1,167 @@
 {
-    "414259b2-ecb7-3626-bd5c-c48d36bff20e": {
+    "2e20d8ba-a51f-c97d-4bad-d1db770617f3": {
+        "paletteKey": "NG-Menu",
+        "designerReference": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "xPosition",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "yPosition",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "templateRef",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "items",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "matMenu",
+                "_value": "menu",
+                "_type": "vk",
+                "_attrDef": "p"
+            }
+        ],
+        "9c921001-3ff4-ea7c-6019-4e9d2ba7e80f": {
+            "paletteKey": "NG-MenuItem",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "MenuItemName",
+                    "_value": "Scan",
+                    "_type": "a",
+                    "_attrDef": "p"
+                }
+            ],
+            "e3e674e3-1edf-54b0-dd18-930fe8f71707": {
+                "paletteKey": "NG-Paragraph",
+                "designerReference": [
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "text",
+                        "_value": "hi",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    }
+                ]
+            }
+        },
+        "60c5b2b0-cb8d-1be1-6d95-156187f3066f": {
+            "paletteKey": "NG-MenuItem",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "MenuItemName",
+                    "_value": "Review",
+                    "_type": "a",
+                    "_attrDef": "p"
+                }
+            ]
+        },
+        "86be942d-e91e-a1fc-19c3-7b8db7d12f73": {
+            "paletteKey": "NG-MenuItem",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "MenuItemName",
+                    "_value": "Admin",
+                    "_type": "a",
+                    "_attrDef": "p"
+                }
+            ]
+        },
+        "d81e2bf5-30e9-49f8-7c21-a4f92b26c39f": {
+            "paletteKey": "NG-MenuItem",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "MenuItemName",
+                    "_value": "Signout",
+                    "_type": "a",
+                    "_attrDef": "p"
+                }
+            ]
+        }
+    },
+    "6e624cee-99e3-53af-741a-235a8d0cdbe4": {
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
@@ -21,20 +183,26 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "wrap",
-                "_value": "",
-                "_type": "a",
-                "_attrDef": "p"
-            },
-            {
                 "_key": "fxLayoutGap",
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
+                "_key": "wrap",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
                 "_key": "layoutAlign",
                 "_value": "start",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "stretch",
                 "_type": "a",
                 "_attrDef": "p"
             },
@@ -51,18 +219,18 @@
                 "_attrDef": "p"
             },
             {
-                "_key": "pLayoutAlign",
-                "_value": "stretch",
-                "_type": "a",
-                "_attrDef": "p"
+                "_key": "fxFill",
+                "_value": "fxFill",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
-        "f68e3bea-2b68-d70d-e697-89cbf96de8ef": {
-            "paletteKey": "NG-Toolbar",
+        "ca7c5576-5851-03bf-8cf0-af190630e52a": {
+            "paletteKey": "NG-Header",
             "designerReference": [
                 {
                     "_key": "style",
-                    "_value": "background-color:black; text-align:center",
+                    "_value": "background-color:black;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -71,65 +239,129 @@
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
-                },
-                {
-                    "_key": "color",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "content",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p"
                 }
             ],
-            "ce6b6c25-994b-fccf-8298-41f685078876": {
-                "paletteKey": "NG-H3",
+            "f68e3bea-2b68-d70d-e697-89cbf96de8ef": {
+                "paletteKey": "NG-Toolbar",
                 "designerReference": [
                     {
                         "_key": "style",
-                        "_value": "color:white;",
+                        "_value": "background-color:#ffeb3b;text-align:center",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "1": false,
                         "_key": "class",
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "2": false,
-                        "_key": "H3 Text",
-                        "_value": "You are about to scan an image",
+                        "_key": "color",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "content",
+                        "_value": "",
                         "_type": "a",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "fxLayoutAlign",
+                        "_value": "space-between center",
+                        "_type": "kv",
+                        "_attrDef": "c"
                     }
-                ]
+                ],
+                "ce6b6c25-994b-fccf-8298-41f685078876": {
+                    "paletteKey": "NG-H3",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "1": false,
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "2": false,
+                            "_key": "H3 Text",
+                            "_value": "ID Scan & Verification",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        }
+                    ]
+                },
+                "b7ddb97e-72f5-42c0-36f3-bc2c52173fd5": {
+                    "paletteKey": "NG-MenuButton",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "MenuName",
+                            "_value": "<i class=\"material-icons\">menu</i>",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "color",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[matMenuTriggerFor]",
+                            "_value": "menu",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                }
             }
         },
-        "5dbf1562-b5f1-32fe-9cbf-cdf33f2552c3": {
+        "414259b2-ecb7-3626-bd5c-c48d36bff20e": {
             "paletteKey": "FlexLayoutCol",
             "designerReference": [
                 {
                     "_key": "style",
-                    "_value": "margin-top:1em;",
+                    "_value": "overflow: auto",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "class",
-                    "_value": "buttons",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "fxFlex",
-                    "_value": "",
+                    "_value": "calc(100%-180px)",
                     "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "wrap",
+                    "_value": "",
+                    "_type": "a",
                     "_attrDef": "p"
                 },
                 {
@@ -139,20 +371,8 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "wrap",
-                    "_value": "wrap",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
                     "_key": "layoutAlign",
-                    "_value": "center",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "pLayoutAlign",
-                    "_value": "center",
+                    "_value": " ",
                     "_type": "a",
                     "_attrDef": "p"
                 },
@@ -167,10 +387,16 @@
                     "_value": "false",
                     "_type": "kv",
                     "_attrDef": "p"
+                },
+                {
+                    "_key": "pLayoutAlign",
+                    "_value": "none",
+                    "_type": "a",
+                    "_attrDef": "p"
                 }
             ],
-            "2787a6a2-0796-9e3b-1c10-0f580b93f929": {
-                "paletteKey": "NG-RaisedButton",
+            "aa18a09f-f440-9010-133b-ad68b12f85ac": {
+                "paletteKey": "NG-RouterOutlet",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -180,66 +406,48 @@
                     },
                     {
                         "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "buttonname",
-                        "_value": "Scan Image",
-                        "_type": "a",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "color",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "(click)",
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
                     }
                 ]
-            },
-            "731fcc7c-886f-cd5f-0371-83bf93f9c268": {
-                "paletteKey": "NG-RaisedButton",
+            }
+        },
+        "c139d03a-cc1b-c96f-a189-bbe1ead4fb2b": {
+            "paletteKey": "NG-Footer",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "background-color:#ffeb3b",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ],
+            "f36f7cd1-989c-0ea4-8828-74db6a22a013": {
+                "paletteKey": "NG-Paragraph",
                 "designerReference": [
                     {
-                        "0": false,
                         "_key": "style",
-                        "_value": "",
+                        "_value": "text-align:center;",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "1": false,
                         "_key": "class",
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
-                        "2": false,
-                        "_key": "buttonname",
-                        "_value": "Logout",
+                        "_key": "text",
+                        "_value": "Neurinos SA",
                         "_type": "a",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "3": false,
-                        "_key": "color",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "4": false,
-                        "_key": "(click)",
-                        "_value": "logoutUser()",
-                        "_type": "kv",
                         "_attrDef": "p"
                     }
                 ]

@@ -1,6 +1,14 @@
-<div fxLayout="column " fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <mat-toolbar style="background-color:black; text-align:center">
-    <h3 style="color:white;">You are about to scan an image</h3>
-  </mat-toolbar>
-  <div fxLayout="column wrap" style="margin-top:1em;" class="buttons" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-raised-button="">Scan Image</button><button mat-raised-button="" (click)="logoutUser()">Logout</button></div>
+<mat-menu #menu="matMenu"><button mat-menu-item=""> Scan <p>hi</p></button><button mat-menu-item=""> Review </button><button mat-menu-item=""> Admin </button><button mat-menu-item=""> Signout </button></mat-menu>
+<div fxLayout="column " fxLayoutAlign="start stretch" fxShow="true" fxHide="false" fxFill="fxFill">
+  <header style="background-color:black;">
+    <mat-toolbar fxLayoutAlign="space-between center" style="background-color:#ffeb3b;text-align:center">
+      <h3>ID Scan &amp; Verification</h3><button mat-button="" [matMenuTriggerFor]="menu"><i class="material-icons">menu</i></button>
+    </mat-toolbar>
+  </header>
+  <div fxLayout="column " style="overflow: auto" fxFlex="calc(100%-180px)" fxLayoutAlign="  none" fxShow="true" fxHide="false">
+    <router-outlet></router-outlet>
+  </div>
+  <footer style="background-color:#ffeb3b">
+    <p style="text-align:center;">Neurinos SA</p>
+  </footer>
 </div>
