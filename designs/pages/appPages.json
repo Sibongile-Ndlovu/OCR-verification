@@ -28,5 +28,10 @@
         "appPageName": "scan",
         "componentName": "scanComponent",
         "isEntry": false
+    },
+    "d9ea1d80-db1e-51c5-58b0-a0f6f76cb7ec": {
+        "appPageName": "userDetails",
+        "componentName": "userdetailsComponent",
+        "isEntry": false
     }
 }

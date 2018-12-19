@@ -142,7 +142,7 @@
                     "designerReference": [
                         {
                             "_key": "style",
-                            "_value": "",
+                            "_value": "text-align:center;",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -671,7 +671,7 @@
                         },
                         {
                             "_key": "(click)",
-                            "_value": "",
+                            "_value": "approve()",
                             "_type": "kv",
                             "_attrDef": "p"
                         }

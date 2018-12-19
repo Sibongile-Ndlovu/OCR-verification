@@ -5,6 +5,7 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { Router } from '@angular/router'; 
+import { count } from '../../models';
 
 /**
  * Service import Example :
@@ -28,6 +29,19 @@ export class reviewComponent extends NBaseComponent implements OnInit {
 
     }
 
+    public countappr: number = 0;
+    callit;
+
+
+    approve() {
+        this.countappr = this.countappr + 1;
+        this.callit = {'count': this.countappr};
+        console.log(this.callit);
+        this.put('count', this.callit);
+        this.get('count');
+        this.router.navigate(['/home/admin']);
+    }
+
     next(){
         this.router.navigate(['/home/admin']);
     }
@@ -35,7 +49,7 @@ export class reviewComponent extends NBaseComponent implements OnInit {
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
-                // On Success code here
+                console.log(result)
             },
             error => {
                 // Handle errors here
@@ -55,8 +69,9 @@ export class reviewComponent extends NBaseComponent implements OnInit {
     put(dataModelName, dataModelObject) {
         this.mm.put(dataModelName, dataModelObject,
             result => {
-                // On Success code here
+                console.log('hey now');
             }, error => {
+                console.log(error);
                 // Handle errors here
             })
     }

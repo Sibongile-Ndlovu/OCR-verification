@@ -1,6 +1,6 @@
 <div fxLayout="column wrap" fxLayoutAlign="  none" fxShow="true" fxHide="false">
   <header style="background-color:#424242;">
-    <h3>Scan Image</h3>
+    <h3 style="text-align:center;">Scan Image</h3>
   </header>
-  <div fxLayout="column wrap" style="margin:50%;" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-raised-button="" style="background-color:#c8b900;" class="progressbutton" [ocrOptions]="{quality:100, correctOrientation: true, uriOrBase:0, returnType:1}" (onsuccess)="success($event)" (onerror)="error($event)">Scan</button><button mat-raised-button="" style="margin-top:1em;background-color:#c8b900;" class="progressbutton">Foward</button></div>
+  <div fxLayout="column wrap" style="margin:50%;" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-raised-button="" style="background-color:#c8b900;" class="progressbutton" n-ocr="" (onsuccess)="success($event)" (onerror)="error($event)" [ocrOptions]="{quality:100, correctOrientation: true, uriOrBase:0, returnType:1}">Scan</button><button mat-raised-button="" style="margin-top:1em;background-color:#c8b900;" class="progressbutton">Foward</button></div>
 </div>

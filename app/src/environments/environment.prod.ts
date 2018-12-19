@@ -4,8 +4,8 @@ export const environment = {
     "properties": {
         "production": true,
         "baseUrl": " http://localhost:3000/bhive-art/",
-        "tenantName": "neutrinos-delivery-rt",
-        "appName": "ocr-validation",
+        "tenantName": "ocr",
+        "appName": "ocr",
         "namespace": "com.neutrinos-delivery-rt.ocr-validation",
         "isNotificationEnabled": true,
         "googleMapKey": "AIzaSyCSTnVwijjv0CFRA4MEeS-H6PAQc87LEoU",

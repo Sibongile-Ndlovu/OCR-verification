@@ -1,0 +1,13 @@
+{
+    "appPageId": "d9ea1d80-db1e-51c5-58b0-a0f6f76cb7ec",
+    "appPageName": "userDetails",
+    "componentName": "userdetailsComponent",
+    "selectorName": "bh-userdetails",
+    "htmlFileName": "userdetails.template.html",
+    "tsFileName": "userdetails.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

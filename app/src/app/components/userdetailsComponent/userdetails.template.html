@@ -1,0 +1,19 @@
+<div fxLayout="column wrap" fxLayoutAlign="space-around stretch" fxShow="true" fxHide="false">
+  <header style="background-color:#424242;">
+    <h3 style="text-align:center;">Personal Information</h3>
+  </header>
+  <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+    <mat-form-field><input matInput="" [(ngModel)]="userdetails.fullname" type="string" placeholder="Full Name" required></mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Gender" [(ngModel)]="userdetails.gender" required>
+        <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field><input matInput="" placeholder="Date of Birth" [matDatepicker]="picker" [(ngModel)]="userdetails.dob">
+      <mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker=""></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field><input matInput="" [(ngModel)]="userdetails.idNo" type="number" placeholder="ID Number" required></mat-form-field>
+    <div fxLayout="column wrap" style="background-color: black;" fxLayoutAlign="center center" fxShow="true" fxHide="false"><button mat-button="" style="background-color:#c8b900;" (click)="submit()">Submit</button></div>
+  </div>
+</div>

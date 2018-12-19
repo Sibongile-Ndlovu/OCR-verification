@@ -1,7 +1,7 @@
 <div fxLayout="column wrap" fxLayoutAlign="  stretch" fxShow="true" fxHide="false" fxFill="fxFill">
   <div fxLayout="column wrap" fxLayoutAlign="space-around center" fxShow="true" fxHide="false">
     <header style="background-color:#424242; width:100%;text-align:center;">
-      <h3>Review Scans</h3>
+      <h3 style="text-align:center;">Review Scans</h3>
     </header>
     <div fxLayout="column wrap" style="padding:10px; background-color:#e0e0e0; width:100%;" fxLayoutAlign="start center" fxShow="true" fxHide="false">
       <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxShow="true" fxHide="false"><button mat-raised-button="" style="width:10em;background-color:#fffff; margin-right:1em;">Pending</button><button mat-raised-button="" style="width:10em;">Complete</button></div>
@@ -10,7 +10,7 @@
       <div fxLayout="column wrap" fxFlex="70" fxLayoutAlign="start center" fxShow="true" fxHide="false"><img imgSrc="/Web/alphabet.jpg" style="height:auto; width:99%; "></div>
       <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start center" fxShow="true" fxHide="false"><img imgSrc="/Web/camera.jpg" style="height:11.2em; width:99%; "></div>
     </div>
-    <div fxLayout="row wrap" style="margin-top: 1.8em;" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"><button mat-raised-button="">Approve</button><button mat-raised-button="">Reject</button></div>
+    <div fxLayout="row wrap" style="margin-top: 1.8em;" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"><button mat-raised-button="" (click)="approve()">Approve</button><button mat-raised-button="">Reject</button></div>
     <div fxLayout="column " style="margin-top: 3em;" fxLayoutAlign="center center" fxShow="true" fxHide="false">
       <div fxLayout="row wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
         <mat-icon style="font-size:2.5em;" (click)="next();">arrow_forward</mat-icon>

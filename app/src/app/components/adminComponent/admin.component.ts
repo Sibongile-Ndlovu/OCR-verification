@@ -4,7 +4,8 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-import { Router } from '@angular/router'; 
+import { Router } from '@angular/router';
+import { count } from '../../models'; 
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
@@ -17,18 +18,23 @@ import { Router } from '@angular/router';
 
 export class adminComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-
+    
+    count;
     constructor(private bdms: NDataModelService, private router: Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-
+ this.getCount()
     }
 
     previous(){
         this.router.navigate(['/home/review']);
+    }
+
+    getCount(){
+        this.get('count');
     }
 
 
@@ -36,6 +42,8 @@ export class adminComponent extends NBaseComponent implements OnInit {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
+                this.count = result;
+                console.log(result);
             },
             error => {
                 // Handle errors here

@@ -4,6 +4,7 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import { userdetails } from '../../models';
 
 /**
  * Service import Example :
@@ -11,11 +12,11 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
  */
 
 @Component({
-    selector: 'bh-scan',
-    templateUrl: './scan.template.html'
+    selector: 'bh-userdetails',
+    templateUrl: './userdetails.template.html'
 })
 
-export class scanComponent extends NBaseComponent implements OnInit {
+export class userdetailsComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
     constructor(private bdms: NDataModelService) {
@@ -27,18 +28,24 @@ export class scanComponent extends NBaseComponent implements OnInit {
 
     }
 
-    onsuccess($event) {
-        console.log($event);
-    } 
+    options: string[] = [
+        'Female',
+        'Male',
+        'other'
+    ]
 
-    onerror($event) {
-        console.log($event);
+    userdetails = new userdetails;
+
+      submit() {
+        this.put('userdetails', this.userdetails);
+        this.get('userdetails');
     }
-    
+
+
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
-                // On Success code here
+               console.log(result);
             },
             error => {
                 // Handle errors here
@@ -58,7 +65,7 @@ export class scanComponent extends NBaseComponent implements OnInit {
     put(dataModelName, dataModelObject) {
         this.mm.put(dataModelName, dataModelObject,
             result => {
-                // On Success code here
+                console.log('done');
             }, error => {
                 // Handle errors here
             })

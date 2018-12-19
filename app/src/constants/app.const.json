@@ -1,5 +1,7 @@
 {
     "dataSource": {
-        "user": "neutrinos-delivery-rt"
+        "user": "neutrinos-delivery-rt",
+        "userdetails": "ocr",
+        "count": "ocr"
     }
 }

@@ -21,5 +21,46 @@
                 "isArray": false
             }
         ]
+    },
+    "7a0aee77-2822-f352-5c33-315b08f50789": {
+        "dataModelId": "7a0aee77-2822-f352-5c33-315b08f50789",
+        "name": "userdetails",
+        "description": "personal information",
+        "dataSource": "ocr",
+        "fields": [
+            {
+                "name": "fullname",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "gender",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "dob",
+                "fieldType": 3,
+                "isArray": false
+            },
+            {
+                "name": "idNo",
+                "fieldType": 1,
+                "isArray": false
+            }
+        ]
+    },
+    "9418d613-fee8-6d01-d347-536416f35eb8": {
+        "dataModelId": "9418d613-fee8-6d01-d347-536416f35eb8",
+        "name": "count",
+        "description": "count approved scans",
+        "dataSource": "ocr",
+        "fields": [
+            {
+                "name": "count",
+                "fieldType": 1,
+                "isArray": false
+            }
+        ]
     }
 }

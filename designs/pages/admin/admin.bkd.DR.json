@@ -246,7 +246,7 @@
                             },
                             {
                                 "_key": "H1 Text",
-                                "_value": "1/50",
+                                "_value": "{{count}}",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }
@@ -260,7 +260,7 @@
             "designerReference": [
                 {
                     "_key": "style",
-                    "_value": "margin-top:2em;",
+                    "_value": "margin-top:2em; text-align:center;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

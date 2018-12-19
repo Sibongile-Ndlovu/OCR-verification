@@ -62,13 +62,13 @@
                 },
                 {
                     "_key": "MenuItemName",
-                    "_value": "Scan",
+                    "_value": "",
                     "_type": "a",
                     "_attrDef": "p"
                 }
             ],
-            "e3e674e3-1edf-54b0-dd18-930fe8f71707": {
-                "paletteKey": "NG-Paragraph",
+            "63340f41-e449-640b-e5d8-307863b95e41": {
+                "paletteKey": "HTML",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -83,8 +83,8 @@
                         "_attrDef": "p"
                     },
                     {
-                        "_key": "text",
-                        "_value": "hi",
+                        "_key": "html",
+                        "_value": "<a routerLink=\"/home/scan\" style=\"text-decoration:none\">Scan</a>",
                         "_type": "a",
                         "_attrDef": "p"
                     }
@@ -108,11 +108,34 @@
                 },
                 {
                     "_key": "MenuItemName",
-                    "_value": "Review",
+                    "_value": "",
                     "_type": "a",
                     "_attrDef": "p"
                 }
-            ]
+            ],
+            "2eff754b-50a5-5cbd-0a49-a1f5e8b80a63": {
+                "paletteKey": "HTML",
+                "designerReference": [
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "html",
+                        "_value": "<a routerLink=\"/home/review\" style=\"text-decoration:none\">Review</a>",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    }
+                ]
+            }
         },
         "86be942d-e91e-a1fc-19c3-7b8db7d12f73": {
             "paletteKey": "NG-MenuItem",
@@ -131,11 +154,34 @@
                 },
                 {
                     "_key": "MenuItemName",
-                    "_value": "Admin",
+                    "_value": "",
                     "_type": "a",
                     "_attrDef": "p"
                 }
-            ]
+            ],
+            "d1367bf5-3f1c-1d9f-6ee1-56831dbffa52": {
+                "paletteKey": "HTML",
+                "designerReference": [
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "html",
+                        "_value": "<a routerLink=\"/home/admin\" style=\"text-decoration:none\">Admin</a>",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    }
+                ]
+            }
         },
         "d81e2bf5-30e9-49f8-7c21-a4f92b26c39f": {
             "paletteKey": "NG-MenuItem",
@@ -154,11 +200,34 @@
                 },
                 {
                     "_key": "MenuItemName",
-                    "_value": "Signout",
+                    "_value": "",
                     "_type": "a",
                     "_attrDef": "p"
                 }
-            ]
+            ],
+            "ae66dfd5-5187-3b84-e064-3713eddc529a": {
+                "paletteKey": "HTML",
+                "designerReference": [
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "html",
+                        "_value": "<a routerLink=\"/login\" style=\"text-decoration:none\">Logout</a>",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    }
+                ]
+            }
         }
     },
     "6e624cee-99e3-53af-741a-235a8d0cdbe4": {

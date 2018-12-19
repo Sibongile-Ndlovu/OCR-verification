@@ -78,7 +78,7 @@
                 "designerReference": [
                     {
                         "_key": "style",
-                        "_value": "",
+                        "_value": "text-align:center;",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -196,14 +196,8 @@
                     },
                     {
                         "_key": "n-ocr",
-                        "_value": "",
+                        "_value": "n-ocr",
                         "_type": "a",
-                        "_attrDef": "c"
-                    },
-                    {
-                        "_key": "[ocrOptions]",
-                        "_value": "{quality:100, correctOrientation: true, uriOrBase:0, returnType:1}",
-                        "_type": "kv",
                         "_attrDef": "c"
                     },
                     {
@@ -215,6 +209,12 @@
                     {
                         "_key": "(onerror)",
                         "_value": "error($event)",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "[ocrOptions]",
+                        "_value": "{quality:100, correctOrientation: true, uriOrBase:0, returnType:1}",
                         "_type": "kv",
                         "_attrDef": "c"
                     }
