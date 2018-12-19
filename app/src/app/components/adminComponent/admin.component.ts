@@ -6,6 +6,9 @@ import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { Router } from '@angular/router';
 import { count } from '../../models'; 
+import { rejectCount } from '../../models';
+
+
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
@@ -19,31 +22,44 @@ import { count } from '../../models';
 export class adminComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     
-    count;
+     count;
+    rejectCount;
+    approved;
+
     constructor(private bdms: NDataModelService, private router: Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
- this.getCount()
+        this.getCount();
+        //this.getNumRejected();
+        //console.log(this.getCount+this.getNumRejected);
+        //var rejected 
+        // console.log(this.getCount());
     }
-
+    
     previous(){
         this.router.navigate(['/home/review']);
     }
 
     getCount(){
-        this.get('count');
+       this.get('count');
     }
+
+    // getNumRejected(){
+    //     this.get('rejectCount');
+    // }
+
 
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
+                this.approved = result.length;
+                console.log(this.approved);
                 // On Success code here
                 this.count = result;
-                console.log(result);
             },
             error => {
                 // Handle errors here

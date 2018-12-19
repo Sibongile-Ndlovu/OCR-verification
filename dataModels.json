@@ -62,5 +62,18 @@
                 "isArray": false
             }
         ]
+    },
+    "18422c31-8be9-a91b-cb1d-e376c43088e1": {
+        "dataModelId": "18422c31-8be9-a91b-cb1d-e376c43088e1",
+        "name": "rejectCount",
+        "description": "Count the number of rejected",
+        "dataSource": "ocr",
+        "fields": [
+            {
+                "name": "addrej",
+                "fieldType": 1,
+                "isArray": false
+            }
+        ]
     }
 }

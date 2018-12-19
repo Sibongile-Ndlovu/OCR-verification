@@ -246,7 +246,7 @@
                             },
                             {
                                 "_key": "H1 Text",
-                                "_value": "{{count}}",
+                                "_value": "",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }

@@ -6,6 +6,7 @@ import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { Router } from '@angular/router'; 
 import { count } from '../../models';
+import { rejectCount } from '../../models';
 
 /**
  * Service import Example :
@@ -29,16 +30,39 @@ export class reviewComponent extends NBaseComponent implements OnInit {
 
     }
 
+    public countrej: number = 0;
     public countappr: number = 0;
-    callit;
+    callit; //approve
+    msgit; //reject
+
+    rejected() {
+        //counts how many times the button has been clicked
+        this.countrej = this.countrej + 1;
+       
+        //save the variable in an object
+        this.msgit = {'addrej': this.countrej};
+        
+        //place object in database
+        console.log(this.msgit);
+        this.put('rejectCount', this.msgit);
+        
+        //get object from database
+        this.get('rejectcount');
+        this.router.navigate(['/home/admin']);
+    }
 
 
     approve() {
+        //counts how many time the button has been clicked
         this.countappr = this.countappr + 1;
+        //save the variable in an object
         this.callit = {'count': this.countappr};
-        console.log(this.callit);
+        //console.log(this.callit);
+        //places object in database
         this.put('count', this.callit);
+        //get object from database
         this.get('count');
+        //navigates to the next page
         this.router.navigate(['/home/admin']);
     }
 
@@ -69,7 +93,7 @@ export class reviewComponent extends NBaseComponent implements OnInit {
     put(dataModelName, dataModelObject) {
         this.mm.put(dataModelName, dataModelObject,
             result => {
-                console.log('hey now');
+                console.log('I did it on my own');
             }, error => {
                 console.log(error);
                 // Handle errors here
