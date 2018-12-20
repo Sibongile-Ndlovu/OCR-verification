@@ -32,8 +32,8 @@ export class reviewComponent extends NBaseComponent implements OnInit {
 
     public countrej: number = 0;
     public countappr: number = 0;
-    callit; //approve
-    msgit; //reject
+    callit; //approve object
+    msgit; //reject object
 
     rejected() {
         //counts how many times the button has been clicked

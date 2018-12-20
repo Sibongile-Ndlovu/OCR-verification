@@ -246,7 +246,7 @@
                             },
                             {
                                 "_key": "H1 Text",
-                                "_value": "",
+                                "_value": "{{approved}}/{{completed}}",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }

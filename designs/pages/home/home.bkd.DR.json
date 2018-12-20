@@ -43,6 +43,12 @@
                 "_value": "menu",
                 "_type": "vk",
                 "_attrDef": "p"
+            },
+            {
+                "_key": "ng-mouseover",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "9c921001-3ff4-ea7c-6019-4e9d2ba7e80f": {
@@ -56,7 +62,7 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": ".menu",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -177,6 +183,52 @@
                     {
                         "_key": "html",
                         "_value": "<a routerLink=\"/home/admin\" style=\"text-decoration:none\">Admin</a>",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    }
+                ]
+            }
+        },
+        "30163241-fceb-3d40-aa8f-7949d5d6b3ca": {
+            "paletteKey": "NG-MenuItem",
+            "designerReference": [
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "MenuItemName",
+                    "_value": "",
+                    "_type": "a",
+                    "_attrDef": "p"
+                }
+            ],
+            "cf221fb1-4f70-46df-a3ec-ff31062649ee": {
+                "paletteKey": "HTML",
+                "designerReference": [
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "html",
+                        "_value": "<a routerLink=\"/home/user_details\" style=\"text-decoration:none\">Personal Information</a>",
                         "_type": "a",
                         "_attrDef": "p"
                     }

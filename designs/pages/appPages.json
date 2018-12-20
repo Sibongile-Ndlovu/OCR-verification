@@ -33,5 +33,10 @@
         "appPageName": "userDetails",
         "componentName": "userdetailsComponent",
         "isEntry": false
+    },
+    "4f4d1712-97e4-8951-d1a9-d28938be86e7": {
+        "appPageName": "Complete",
+        "componentName": "completeComponent",
+        "isEntry": false
     }
 }
